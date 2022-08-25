@@ -54,9 +54,9 @@ export default function LeftSideDrawer(
           </Link>
 
           <Link to="/space" className="drawer-link">
-            <ListItem key={'space'} disablePadding>
+            <ListItem key={'lion'} disablePadding>
               <ListItemButton>
-                <ListItemText primary={'The Space'} />
+                <ListItemText primary={'Lion'} />
               </ListItemButton>
             </ListItem>
           </Link>
@@ -72,11 +72,11 @@ export default function LeftSideDrawer(
             </ListItemButton>
           </ListItem>
 
-          <ListItem key={'home'} disablePadding onClick={() => setShowImages(true)}>
-            <ListItemButton>
-              <ListItemText primary={'Photos'} />
-            </ListItemButton>
-          </ListItem>
+          {/*<ListItem key={'home'} disablePadding onClick={() => setShowImages(true)}>*/}
+          {/*  <ListItemButton>*/}
+          {/*    <ListItemText primary={'Photos'} />*/}
+          {/*  </ListItemButton>*/}
+          {/*</ListItem>*/}
         </List>
 
         <div className={`buttons-container buttons-container--left`}>

@@ -73,21 +73,21 @@ function App() {
       </Routes>
 
       <div className={`buttons-container buttons-container--left`}>
-        <Menu className="pointer" style={{ color: "white", margin: "0 4px" }} onClick={(event) => {toggleLeftSideDrawer(event)}}/>
+        <Menu className="pointer" style={{ color: "black", margin: "0 4px" }} onClick={(event) => {toggleLeftSideDrawer(event)}}/>
       </div>
 
       <div className="buttons-container">
-        <InfoOutlined className="pointer" style={{ color: "white", margin: "0 4px" }} onClick={() => {setShowInfoModal(!showInfoModal)}}/>
+        <InfoOutlined className="pointer" style={{ color: "black", margin: "0 4px" }} onClick={() => {setShowInfoModal(!showInfoModal)}}/>
 
-        <div className="pointer" onClick={() => {setShowImages(!showImages)}}>
-          <CameraAltOutlined  style={{ color: "white", margin: "0 4px" }} />
-          { showImages && (
-            <ChevronRight style={{ color: "white", margin: "0 4px" }} />
-          )}
-          { !showImages && (
-            <ChevronLeft style={{ color: "white", margin: "0 4px" }} />
-          )}
-          </div>
+        {/*<div className="pointer" onClick={() => {setShowImages(!showImages)}}>*/}
+        {/*  <CameraAltOutlined  style={{ color: "black", margin: "0 4px" }} />*/}
+        {/*  { showImages && (*/}
+        {/*    <ChevronRight style={{ color: "black", margin: "0 4px" }} />*/}
+        {/*  )}*/}
+        {/*  { !showImages && (*/}
+        {/*    <ChevronLeft style={{ color: "black", margin: "0 4px" }} />*/}
+        {/*  )}*/}
+        {/*  </div>*/}
       </div>
     </div>
   );
