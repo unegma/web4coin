@@ -9,7 +9,7 @@ import PhotoViewer from "./components/PhotoViewer";
 import InfoModal from "./components/InfoModal";
 import LeftSideDrawer from "./components/LeftSideDrawer";
 import HomeScreen from "./components/HomeScreen";
-import SpaceOne from "./components/SpaceOne";
+import RelicOne from "./components/RelicOne";
 // import BookingModal from "./components/BookingModal";
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
           key={'space'}
           path="/space"
           element={
-            <SpaceOne />
+            <RelicOne />
           }
         />
 
