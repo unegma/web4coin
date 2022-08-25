@@ -155,6 +155,13 @@ canvas {
   top:5px !important;
 }
 
+.closeModalButton--large {
+  cursor: pointer;
+  position: absolute !important;
+  right: 15px !important;
+  bottom:15px !important;
+}
+
 .home-screen-image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,6 +183,11 @@ canvas {
   align-items: center;
 }
 
+.home-screen-button-container {
+  position: absolute;
+  right: 15vw !important;
+}
+
 .home-screen-button {
   color: black !important;
   border-color: white !important;
@@ -195,6 +207,70 @@ canvas {
 .main-title-navbar {
   padding: 8px;
   padding-left: 14px;
+}
+
+.info-map {
+  min-height: 40vh;
+}
+
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+.connect-button {
+}
+
+/* modal for connect */
+
+.closeModalButton {
+  cursor: pointer;
+  position: absolute !important;
+  right: 5px !important;
+  top:5px !important;
+  color: black;
+  cursor: pointer;
+}
+
+.modalTitle {
+  color: black;
+}
+
+.connectButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.connectTypeButton {
+  margin-right: 5px !important;
+}
+
+.minitext {
+  font-size: 10px;
+}
+
+.web3connectButton {
+  color: white !important;
+  border: none !important;
+}
+
+.connectButton {
+  background-color: red !important;
+}
+
+.disconnectButton {
+  background-color: green !important;
+}
+
+.web3connectButton:hover {
+  opacity: 0.8 !important;
+}
+
+.buyButton {
+  margin-right: 5px !important;
 }
 
 .info-map {
