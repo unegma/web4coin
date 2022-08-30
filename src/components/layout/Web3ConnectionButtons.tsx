@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { Web3Provider } from "@ethersproject/providers";
-import { injected, walletconnect } from "../helpers/connectors";
-import { useEagerConnect, useInactiveListener } from "../helpers/hooks";
-import getErrorMessage from "../helpers/getErrorMessage";
-import { Spinner } from "./Spinner";
+import { injected, walletconnect } from "../../helpers/connectors";
+import { useEagerConnect, useInactiveListener } from "../../helpers/hooks";
+import getErrorMessage from "../../helpers/getErrorMessage";
+import { Spinner } from "../various/Spinner";
 import { Button, Modal, Box} from "@mui/material";
 import {Typography} from "@mui/material";
 import {HighlightOff as HighlightOffIcon} from "@mui/icons-material";

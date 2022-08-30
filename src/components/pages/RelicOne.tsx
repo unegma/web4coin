@@ -1,7 +1,7 @@
 import {DefaultXRControllers, VRCanvas, useXR} from "@react-three/xr";
 import {Html, OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import React, {Suspense} from "react";
-import Relic from "./Relic";
+import Relic from "../3d/Relic";
 
 export default function RelicOne() {
   const { player } = useXR();

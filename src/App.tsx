@@ -3,15 +3,15 @@ import {
   Route, Routes
 } from "react-router-dom";
 import './App.css';
-import NavBar from "./components/NavBar";
+import NavBar from "./components/layout/NavBar";
 import {CameraAltOutlined, ChevronLeft, ChevronRight, InfoOutlined, Menu} from "@mui/icons-material";
-import PhotoViewer from "./components/PhotoViewer";
-import InfoModal from "./components/InfoModal";
-import LeftSideDrawer from "./components/LeftSideDrawer";
-import HomeScreen from "./components/HomeScreen";
-import DashboardScreen from "./components/DashboardScreen";
-import RelicOne from "./components/RelicOne";
-import RightSideDrawer from "./components/RightSideDrawer";
+import PhotoViewer from "./components/layout/PhotoViewer";
+import InfoModal from "./components/layout/InfoModal";
+import LeftSideDrawer from "./components/layout/LeftSideDrawer";
+import HomeScreen from "./components/pages/HomeScreen";
+import DashboardScreen from "./components/pages/DashboardScreen";
+import RelicOne from "./components/pages/RelicOne";
+import RightSideDrawer from "./components/layout/RightSideDrawer";
 // import BookingModal from "./components/BookingModal";
 
 function App() {
