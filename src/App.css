@@ -276,3 +276,7 @@ canvas {
 .info-map {
   min-height: 40vh;
 }
+
+.rightDrawer {
+  opacity: 0.5;
+}

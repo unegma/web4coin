@@ -10,6 +10,7 @@ import InfoModal from "./components/InfoModal";
 import LeftSideDrawer from "./components/LeftSideDrawer";
 import HomeScreen from "./components/HomeScreen";
 import RelicOne from "./components/RelicOne";
+import RightSideDrawer from "./components/RightSideDrawer";
 // import BookingModal from "./components/BookingModal";
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
   const [showBookingModal, setShowBookingModal] = useState(false);
 
   const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [drawerRightOpen, setDrawerRightOpen] = React.useState(false);
+  const [infoOpen, setInfoOpen] = React.useState(false);
 
   const toggleLeftSideDrawer = (event: React.KeyboardEvent | React.MouseEvent) => {
       if (event.type === 'keydown' && (
@@ -26,6 +29,14 @@ function App() {
         return;
       }
       setDrawerOpen(!drawerOpen);
+  };
+  const toggleRightSideDrawer = (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (event.type === 'keydown' && (
+        (event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift'))
+      {
+        return;
+      }
+    setDrawerRightOpen(!drawerRightOpen);
   };
 
   return (
@@ -43,6 +54,16 @@ function App() {
         toggleLeftSideDrawer={toggleLeftSideDrawer}
         setShowImages={setShowImages}
         setShowInfoModal={setShowInfoModal}
+      />
+
+      <RightSideDrawer
+        infoOpen={infoOpen}
+        toggleRightSideDrawer={toggleRightSideDrawer}
+        // setShowImages={setShowImages}
+        // setShowInfoModal={setShowInfoModal}
+        // showInfoModal={showInfoModal}
+        drawerRightOpen={drawerRightOpen}
+        setDrawerRightOpen={setDrawerRightOpen}
       />
 
       <Routes>
@@ -77,17 +98,17 @@ function App() {
       </div>
 
       <div className="buttons-container">
-        <InfoOutlined className="pointer" style={{ color: "black", margin: "0 4px" }} onClick={() => {setShowInfoModal(!showInfoModal)}}/>
+        {/*<InfoOutlined className="pointer" style={{ color: "black", margin: "0 4px" }} onClick={() => {setShowInfoModal(!showInfoModal)}}/>*/}
 
-        {/*<div className="pointer" onClick={() => {setShowImages(!showImages)}}>*/}
-        {/*  <CameraAltOutlined  style={{ color: "black", margin: "0 4px" }} />*/}
-        {/*  { showImages && (*/}
-        {/*    <ChevronRight style={{ color: "black", margin: "0 4px" }} />*/}
-        {/*  )}*/}
-        {/*  { !showImages && (*/}
-        {/*    <ChevronLeft style={{ color: "black", margin: "0 4px" }} />*/}
-        {/*  )}*/}
-        {/*  </div>*/}
+        <div className="pointer" onClick={(event) => {toggleRightSideDrawer(event)}}>
+          <InfoOutlined className="pointer" style={{ color: "black", margin: "0 4px" }} />
+          { drawerRightOpen && (
+            <ChevronRight style={{ color: "black", margin: "0 4px" }} />
+          )}
+          { !drawerRightOpen && (
+            <ChevronLeft style={{ color: "black", margin: "0 4px" }} />
+          )}
+        </div>
       </div>
     </div>
   );
