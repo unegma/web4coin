@@ -9,6 +9,7 @@ import PhotoViewer from "./components/PhotoViewer";
 import InfoModal from "./components/InfoModal";
 import LeftSideDrawer from "./components/LeftSideDrawer";
 import HomeScreen from "./components/HomeScreen";
+import DashboardScreen from "./components/DashboardScreen";
 import RelicOne from "./components/RelicOne";
 import RightSideDrawer from "./components/RightSideDrawer";
 // import BookingModal from "./components/BookingModal";
@@ -72,6 +73,14 @@ function App() {
           path="/"
           element={
             <HomeScreen  toggleLeftSideDrawer={toggleLeftSideDrawer}/>
+          }
+        />
+
+        <Route
+          key={'dashboard'}
+          path="/dashboard"
+          element={
+            <DashboardScreen />
           }
         />
 
