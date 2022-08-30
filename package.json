@@ -21,6 +21,7 @@
     "@web3-react/injected-connector": "^6.0.7",
     "@web3-react/walletconnect-connector": "6.2.4",
     "ethers": "^5.6.6",
+    "rain-sdk": "git+https://github.com/beehive-innovation/rain-sdk.git#34755e83b860f3e45f48bfe9b0457d78b467a067",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-photo-view": "^1.1.2",
