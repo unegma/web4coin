@@ -7,21 +7,13 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.2",
-    "@react-three/drei": "^9.11.3",
-    "@react-three/fiber": "^8.0.20",
-    "@react-three/xr": "^3.5.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.1",
-    "@types/node": "^16.11.36",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.5",
+    "@react-three/drei": "^9.25.3",
+    "@react-three/fiber": "^8.6.2",
+    "@react-three/xr": "^5.0.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
     "@web3-react/walletconnect-connector": "6.2.4",
-    "ethers": "^5.6.6",
-    "rain-sdk": "git+https://github.com/beehive-innovation/rain-sdk.git#34755e83b860f3e45f48bfe9b0457d78b467a067",
+    "ethers": "^5.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-photo-view": "^1.1.2",
@@ -61,6 +53,13 @@
     ]
   },
   "devDependencies": {
-    "@types/three": "^0.140.0"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.36",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "@types/three": "^0.143.2"
   }
 }
