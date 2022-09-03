@@ -1,15 +1,15 @@
-import {DefaultXRControllers, VRCanvas, useXR} from "@react-three/xr";
+// import {DefaultXRControllers, VRCanvas, useXR} from "@react-three/xr";
+import {Canvas} from "@react-three/fiber";
 import {Html, OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import React, {Suspense} from "react";
 import Relic from "../3d/Relic";
 
 export default function RelicOne() {
-  const { player } = useXR();
-
+  // const { player } = useXR();
+ 
   return (
-
-    <VRCanvas>
-      <DefaultXRControllers />
+    <Canvas>
+      {/*<DefaultXRControllers />*/}
 
       {/*lock zoom to keep dolls house view. Can use minPolarAngle={Math.PI/2.1} maxPolarAngle={Math.PI/2.1} to lock rotation */}
       {/*<OrbitControls enableZoom={true} enablePan={false} minZoom={Math.PI/2} maxZoom={Math.PI/3} />*/}
@@ -22,6 +22,6 @@ export default function RelicOne() {
       <Suspense fallback={<Html className="white">loading 3d view..</Html>}>
         <Relic />
       </Suspense>
-    </VRCanvas>
+    </Canvas>
   )
 }

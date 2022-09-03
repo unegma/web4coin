@@ -1,27 +1,28 @@
 // import {ethers} from "ethers";
 // import * as rainSDK from "rain-sdk";
 
+export {};
 // Config
-interface Vapour721AConfig {
-  name: string,
-  symbol: string,
-  description: string,
-  imageFile: File,
-  maxSupply: number,
-  currency: string,
-  royalty: number,
-  recipient: string,
-  owner: string,
-  admin: string,
-  useNativeToken: boolean,
-  currencyContract: Contract,
-  phases: Phase[],
-  soulbound: boolean,
-  erc20info: ERC20Info,
-  mediaUploadResp: any,
-  baseURI: string,
-  image?: string
-}
+// interface Vapour721AConfig {
+//   name: string,
+//   symbol: string,
+//   description: string,
+//   imageFile: File,
+//   maxSupply: number,
+//   currency: string,
+//   royalty: number,
+//   recipient: string,
+//   owner: string,
+//   admin: string,
+//   useNativeToken: boolean,
+//   currencyContract: Contract,
+//   phases: Phase[],
+//   soulbound: boolean,
+//   erc20info: ERC20Info,
+//   mediaUploadResp: any,
+//   baseURI: string,
+//   image?: string
+// }
 
 //
 // const WARNING_MESSAGE="Are you connected with your Web3 Wallet? (Click the button at the top right)!\n\nYou also need to be connected to Polygon Mumbai Testnet (how to: https://www.youtube.com/watch?v=I4C5RkiNAYQ)!\n\nYou will also need testnet Matic tokens (https://faucet.polygon.technology/)";
