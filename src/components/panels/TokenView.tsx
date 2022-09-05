@@ -38,7 +38,7 @@ export default function TokenView({
       { faucetView && (
         <>
           <NavBar string={`${reserveSymbol} Faucet (${reserveName})`} />
-          <p className='deploy-own'>Must be connected to <a href={`https://chainlist.org/?search=mumbai&testnets=true`} target="_blank"><b className='modalTextRed'>{CHAIN_NAME}</b></a>.</p>
+          <p className='deploy-own'>Must be connected to <a href={`https://www.youtube.com/watch?v=6h_liI6atEk`} target="_blank"><b className='modalTextRed'>{CHAIN_NAME}</b></a>.</p>
           <p className={`github github--secondview`}><a href={`${GITHUB_LINK}`} target="_blank">Made with Rain Protocol.</a></p>
 
           <div className="canvasContainer">
