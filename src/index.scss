@@ -1,0 +1,292 @@
+/*todo move to styled components*/
+
+/******* Main *******/
+
+html, body {
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+  margin-top: 5vh;
+  /*ipad mini*/
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+.rootContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+body {
+  color: white;
+  user-select: none;
+}
+
+.right {
+  text-align: right;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.bullet:before {
+  content:"• ";
+  color: black;
+  text-decoration: none !important;
+}
+
+.yourBalance {
+  color: green;
+  font-weight: bold;
+}
+
+.the-canvas {
+  width: 100vw !important;
+  height: 60vh !important; /* above 70 seems to break something */
+}
+
+.the-canvas:hover {
+  cursor: pointer;
+}
+
+/******* 3D *******/
+
+
+/******* Layout *******/
+
+.navBar {
+  z-index: 2;
+  color: black;
+
+  header {
+    background-color: white;
+
+    @media screen and (min-width: 768px) {
+      background-color: transparent; // safeguard
+    }
+  }
+}
+
+.deploy-own {
+  display: block;
+  position: absolute;
+
+  background-color: black;
+  font-size: 16px;
+  padding: 10px;
+  bottom: 5px;
+  right: 5px;
+
+  a {
+    color: white;
+    /*text-decoration: none;*/
+  }
+}
+
+.github {
+  position: absolute;
+
+  font-size: 16px;
+  padding: 10px;
+  bottom: 0px;
+  left: 5px;
+  z-index:999;
+
+  a {
+    color: black;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block
+  }
+
+  &--firstview {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &--secondview {
+    bottom: 60px !important;
+    @media screen and (min-width: 768px) {
+      bottom: 0px !important;
+    }
+  }
+}
+
+.connectButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.connectTypeButton {
+  margin-right: 5px !important;
+}
+
+.minitext {
+  font-size: 10px;
+}
+
+.web3connectButton {
+  color: white !important;
+  border: none !important;
+
+  &:hover {
+    opacity: 0.8 !important;
+  }
+}
+
+.connectButton {
+  background-color: red !important;
+}
+
+.disconnectButton {
+  background-color: green !important;
+}
+
+.the-modal {
+  width: 100vw;
+  .MuiBox-root {
+    width: 80vw;
+    @media screen and (min-width: 768px) {
+      width: 38vw;
+    }
+  }
+}
+
+.modalCloseButton {
+  margin-top: 30px !important;
+}
+
+/******* Panels *******/
+
+.faucetImage {
+  width: 50vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+
+  /*ipad mini*/
+  @media screen and (min-width: 768px) {
+    max-width: 40vw;
+  }
+}
+
+.buttons-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.fifty-percent-button {
+  flex: 1;
+}
+
+#component-helper-text {
+  /*color: green;*/
+}
+
+.input-box-label {
+  font-weight: bold !important;
+  color: black !important;
+}
+
+.deploying {
+  position: fixed;
+  width:100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+}
+
+.mainImage {
+  max-width: 30vw;
+  height: auto;
+  align-self: center;
+}
+
+.the-canvas-deploypanel {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+.closeModalButton {
+  cursor: pointer;
+  position: absolute !important;
+  right: 5px !important;
+  top:5px !important;
+  color: black;
+}
+
+.modalTitle {
+  color: black;
+}
+
+.modalText {
+  color: black;
+  user-select: text;
+}
+
+.modalTextRed {
+  color: red;
+  user-select: text;
+}
+
+.modalTextGreen {
+  color: green;
+  user-select: text;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+}
+
+/******* Various *******/
+
