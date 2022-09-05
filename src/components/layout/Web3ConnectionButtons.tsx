@@ -174,6 +174,7 @@ export default function Web3ConnectionButtons({setAddress, setSettingsOpen}: any
               </div>
             }
           </div>
+          <br/>
           <Button className="closeModalButton--large" variant="contained" color="primary" onClick={hideModal}>
             Close
           </Button>
