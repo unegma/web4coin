@@ -43,11 +43,15 @@ export default function TokenClaimModal({
       <Box component="div" sx={style}>
         <HighlightOffIcon className="closeModalButton" onClick={() => { setModalOpen(false)}}/>
         <br/>
-        <TransactionsChartClaim reserveSymbol={reserveSymbol} />
-        <br/>
+        {/*<TransactionsChartClaim reserveSymbol={reserveSymbol} />*/}
+        {/*<br/>*/}
 
         <Typography className="modalText">
-          <span className='yourBalance'>Your Balance: {reserveBalance}{reserveSymbol}</span>.
+          <span>This token was deployed to say thank you to the legend that is <a target="_blank" href="https://twitter.com/matthewjura">Matthew</a>. Thank you for everything you have shown me with 3D this year, I could not have figured out how to have changed the colour on the fountain without you! Hope you had a fantastic day, and have a great year to come.</span><br/>
+        </Typography><br/><br/>
+
+        <Typography className="modalText">
+          <span className='yourBalance'>Your Balance: {reserveBalance}{reserveSymbol}</span>.<br/>
           To see these tokens in your Wallet,&nbsp;
           <a href="#" onClick={(event: any) =>
             {event.preventDefault();alert(`Copy: ${tokenAddress} to clipboard and import token in to your Wallet.`)}}
@@ -56,9 +60,9 @@ export default function TokenClaimModal({
           </a>.
         </Typography><br/>
 
-        <Typography className="modalText">
-          These <b>{reserveSymbol}</b> can be used <a href={`${SALE_BASE_URL}?t=${tokenAddress}`} target="_blank">as the <b>Reserve Token</b> in a Rain Sale (link passes address)</a>.
-        </Typography><br/>
+        {/*<Typography className="modalText">*/}
+        {/*  These <b>{reserveSymbol}</b> can be used <a href={`${SALE_BASE_URL}?t=${tokenAddress}`} target="_blank">as the <b>Reserve Token</b> in a Rain Sale (link passes address)</a>.*/}
+        {/*</Typography><br/>*/}
 
         <Warning /><br/>
         <Console consoleData={consoleData} consoleColor={consoleColor} /><br/>

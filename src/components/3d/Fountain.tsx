@@ -8,15 +8,15 @@ import React, {useEffect, useRef} from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 
-const FAUCET_URL = `${process.env.REACT_APP_CDN_BASE_URL}/fountain.gltf`;
+const FAUCET_URL = `${process.env.REACT_APP_CDN_BASE_URL}/fountain-transformed.glb`;
 
 type GLTFResult = GLTF & {
   nodes: {
-    Object_24: THREE.SkinnedMesh
+    Object_24001: THREE.SkinnedMesh
     _rootJoint: THREE.Bone
   }
   materials: {
-    ['m_fountain.001']: THREE.MeshStandardMaterial
+    ['m_fountain.002']: THREE.MeshStandardMaterial
   }
 }
 
@@ -40,16 +40,16 @@ export default function Model({ ...props }: JSX.IntrinsicElements['group']) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.02}>
-          <group name="215894519faf49b8ae450b3291cf1dc1fbx" rotation={[Math.PI / 2, 0, 0]}>
-            <group name="Object_2">
-              <group name="RootNode">
-                <group name="Fountain_Mesh" position={[0, 0, -587.6]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
-                  <group name="FountainBones" rotation={[0, 0, -Math.PI / 2]}>
-                    <group name="Object_6">
-                      <group name="Object_23" position={[0, 0, -587.6]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
+        <group name="Sketchfab_model001" rotation={[-Math.PI / 2, 0, 0]} scale={0.02}>
+          <group name="215894519faf49b8ae450b3291cf1dc1fbx001" rotation={[Math.PI / 2, 0, 0]}>
+            <group name="Object_2001">
+              <group name="RootNode001">
+                <group name="Fountain_Mesh001" position={[0, 0, -587.6]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+                  <group name="FountainBones001" rotation={[0, 0, -Math.PI / 2]}>
+                    <group name="Object_6001">
+                      <group name="Object_23001" position={[0, 0, -587.6]} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
                       <primitive object={nodes._rootJoint} />
-                      <skinnedMesh name="Object_24" geometry={nodes.Object_24.geometry} material={materials['m_fountain.001']} skeleton={nodes.Object_24.skeleton} />
+                      <skinnedMesh name="Object_24001" geometry={nodes.Object_24001.geometry} material={materials['m_fountain.002']} skeleton={nodes.Object_24001.skeleton} />
                     </group>
                   </group>
                 </group>
