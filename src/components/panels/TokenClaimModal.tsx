@@ -47,7 +47,9 @@ export default function TokenClaimModal({
         {/*<br/>*/}
 
         <Typography className="modalText">
-          <span>This token was deployed in honour of the birthday of the legend <a target="_blank" href="https://twitter.com/matthewjura">Matthew</a>. Any 3D work you need, he is the guy to get in touch with!<br/>Hope you had a fantastic day, and have a great year to come.</span><br/>
+          <span>This token was deployed in honour of the legend <a target="_blank" href="https://twitter.com/matthewjura">Matthew</a>.<br/>
+            Any 3D work you need, he is the guy to get in touch with!<br/>
+            Hope you had a fantastic birthday and have a great year!</span><br/>
         </Typography><br/><br/>
 
         <Typography className="modalText">
