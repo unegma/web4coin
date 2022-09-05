@@ -69,7 +69,7 @@ export default function TokenClaimModal({
 
         <div className="buttons-box">
           <Button disabled={buttonLock} className="fifty-percent-button" variant="outlined" onClick={() => {setModalOpen(false)}}>Close</Button>
-          <Button disabled={buttonLock} className="fifty-percent-button" variant="contained" onClick={initiateClaim}>Get {reserveSymbol}!</Button>
+          <Button disabled={buttonLock} className="fifty-percent-button" variant="contained" onClick={initiateClaim}>Get 100 {reserveSymbol}!</Button>
         </div>
 
       </Box>
