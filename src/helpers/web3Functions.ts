@@ -1,7 +1,7 @@
 import {ethers} from "ethers";
 import * as rainSDK from "rain-sdk";
 
-const WARNING_MESSAGE="Are you connected with your Web3 Wallet? (Click the button at the top right)!\n\nYou also need to be connected to Polygon Mumbai Testnet (how to: https://www.youtube.com/watch?v=I4C5RkiNAYQ)!\n\nYou will also need testnet Matic tokens (https://faucet.polygon.technology/)";
+const WARNING_MESSAGE="Are you connected with your Web3 Wallet? (Click the button at the top right)!\n\nYou also need to be connected to Ethereum Mainnet (how to: https://www.youtube.com/watch?v=6h_liI6atEk)!\n\nYou will also need ETH to pay transaction fees to claim these tokens (if fees are high, try at a different time).";
 
 /**
  * Deploy a Sale and Start it (2txs)
