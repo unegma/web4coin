@@ -31,12 +31,12 @@ const modalStyle = {
 
 enum ConnectorNames {
   Metamask = 'Metamask',
-  WalletConnect = 'WalletConnect'
+  // WalletConnect = 'WalletConnect'
 }
 
 const connectorsByName: { [connectorName in ConnectorNames]: any} = {
   [ConnectorNames.Metamask]: injected,
-  [ConnectorNames.WalletConnect]: walletconnect
+  // [ConnectorNames.WalletConnect]: walletconnect
 }
 
 export default function Web3ConnectionButtons({setAddress, setSettingsOpen}: any) {
@@ -57,13 +57,13 @@ export default function Web3ConnectionButtons({setAddress, setSettingsOpen}: any
   const triedEager = useEagerConnect();
 
   const handleDisconnect = () => {
-    if (connector === connectorsByName[ConnectorNames.WalletConnect]) {
-      console.log('Deactivating WalletConnect session');
-      (connector as any).close(); // todo unfinsihed
+    // if (connector === connectorsByName[ConnectorNames.WalletConnect]) {
+    //   console.log('Deactivating WalletConnect session');
+    //   (connector as any).close(); // todo unfinsihed
+    //   deactivate();
+    // } else {
       deactivate();
-    } else {
-      deactivate();
-    }
+    // }
   }
 
   // handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
